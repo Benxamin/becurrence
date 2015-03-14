@@ -1,0 +1,177 @@
+/* Icon Font */
+@font-face {
+	font-family: 'triangle';
+	src:url('../fonts/triangle.eot');
+	src:url('../fonts/triangle.eot#iefix') format('embedded-opentype'),
+		url('../fonts/triangle.woff') format('woff'),
+		url('../fonts/triangle.ttf') format('truetype'),
+		url('../fonts/triangle.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'triangle';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play3:before {
+	content: "\ea1c";
+}
+
+/* Sensible Defaults */
+html {
+	font-size: 10pt;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	list-style-type: none;
+}
+nav li a {
+	display: block;
+	text-decoration: none;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* Layout */
+.window {
+	text-align: center;
+	min-width: 320px;
+}
+main {
+	background: #fff;
+	border: 1px solid #777;
+	margin: 6rem auto -6rem;
+	height: 84%;
+	padding: 2rem;
+	position: relative;
+	width: 70%;
+}
+header {
+	background: #777;
+	color: #fff;
+	left: 0;
+	line-height: 1;
+	margin: -1px -1px 0;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+}
+header h2 {
+	border-bottom: 2px solid #555;
+	font-size:2.75rem;
+	font-weight: 100;
+	letter-spacing: 1pt;
+	padding:1.5rem;
+}
+header h3 {
+	background: #ccc;
+	border-bottom: 1px solid #b9b9b9;
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+	border-top: 1px solid #aaa;
+	color: #333;
+	font-size: 1rem;
+	padding:0.75rem 1.3rem;
+}
+main section {
+  height: 100%;
+	margin: 8rem 0 12rem;
+	text-align: left;
+}
+nav {
+	background: #fff;
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #666;
+	left: 0;
+	margin-top: -4rem;
+	padding: 2rem 0;
+	position: fixed;
+	right: 0;
+}
+nav ul {
+	margin: 0 auto;
+	padding:0 2rem;
+	position: relative;
+	width: 70%;
+}
+nav li a {
+	color: #555;
+	font-size: 3rem;
+	float: right;
+	height: 3rem;
+	width: 3rem;
+}
+nav li a span {
+	display: block;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+.icon-tri {
+  text-indent: 0;
+  text-shadow: rgba(33,33,33,0.85) 0 5px 0;
+}
+.icon-tri:before {
+    content: "\ea1c";
+}
+a:focus .icon-tri,
+a:hover .icon-tri {
+	margin-top: 1px;
+	text-shadow:rgba(33,33,33,0.85) 0 4px 0;
+}
+a:active .icon-tri {
+	margin-top: 4px;
+	text-shadow:rgba(33,33,33,0.85) 0 1px 0;
+}
+.nav--prev {
+	float: left;
+}
+.nav--prev span.icon-tri {
+	transform: rotate(180deg);
+	text-shadow:rgba(33,33,33,0.85) 0 -5px 0;
+}
+.nav--prev:focus .icon-tri,
+.nav--prev:hover .icon-tri {
+	margin-top: 1px;
+	text-shadow:rgba(33,33,33,0.85) 0 -4px 0;
+}
+.nav--prev:active .icon-tri {
+	margin-top: 4px;
+	text-shadow:rgba(33,33,33,0.85) 0 -1px 0;
+}
